@@ -14,26 +14,62 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-button onclick="addItem()">+</ion-button>
-
-  <ion-list id="list">
-      <ion-item>
-          <ion-label>
-              Legday
-          </ion-label>
-          <ion-label>
-              8.5.2022
-          </ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>
-            Cardio
-        </ion-label>
-        <ion-label>
-            12.5.2022
-        </ion-label>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Customize your workout
+      </ion-label>
+    </ion-list-header>
+  
+    <ion-item>
+      <ion-label>Workout type</ion-label>
+      <ion-select placeholder="Select One">
+        <ion-select-option value="f">Cardio</ion-select-option>
+        <ion-select-option value="m">Strength training</ion-select-option>
+        <ion-select-option value="f">Upper body strength</ion-select-option>
+        <ion-select-option value="f">Leg training</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Number of exercises</ion-label>
+      <ion-select value="0" okText="Okay" cancelText="Cancel">
+        <ion-select-option value="0">0</ion-select-option>
+        <ion-select-option value="1">1</ion-select-option>
+        <ion-select-option value="2">2</ion-select-option>
+        <ion-select-option value="3">3</ion-select-option>
+        <ion-select-option value="4">4</ion-select-option>
+        <ion-select-option value="5">5</ion-select-option>
+        <ion-select-option value="6">6</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Number of sets</ion-label>
+      <ion-select value="0" okText="Okay" cancelText="Cancel">
+        <ion-select-option value="0">0</ion-select-option>
+        <ion-select-option value="1">1</ion-select-option>
+        <ion-select-option value="2">2</ion-select-option>
+        <ion-select-option value="3">3</ion-select-option>
+        <ion-select-option value="4">4</ion-select-option>
+        <ion-select-option value="5">5</ion-select-option>
+        <ion-select-option value="6">6</ion-select-option>
+        <ion-select-option value="7">7</ion-select-option>
+        <ion-select-option value="8">8</ion-select-option>
+        <ion-select-option value="9">9</ion-select-option>
+        <ion-select-option value="10">10</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <header>Intensity</header>
+      <ion-range min="0" max="100" step="10" snaps="true" color="secondary"></ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mark workout completed</ion-label>
+    <ion-checkbox></ion-checkbox>
     </ion-item>
   </ion-list>
+
+  
 
   <script>
 
